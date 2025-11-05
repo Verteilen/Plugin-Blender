@@ -1,0 +1,156 @@
+{
+    "uuid": "1f0ba093-7d39-6314-9597-5b2ead71d525",
+    "title": "",
+    "description": "",
+    "tasks": [
+        {
+            "uuid": "1f0ba093-7d3b-6a21-913e-b990b2bfce60",
+            "title": "Cluster Render",
+            "description": "",
+            "setupjob": false,
+            "cronjob": false,
+            "cronjobKey": "",
+            "multi": false,
+            "multiKey": "",
+            "properties": [],
+            "jobs": [
+                {
+                    "uuid": "1f0ba093-7d3b-6a20-9600-f716ad5c22ab",
+                    "title": "",
+                    "description": "",
+                    "category": 1,
+                    "type": 7,
+                    "script": "start = env.getnumber(\"start\");\nend = env.getnumber(\"end\");\nresult = end - start + 1\nenv.setnumber(\"cluster\", result);\n",
+                    "string_args": [
+                        ""
+                    ],
+                    "number_args": [],
+                    "boolean_args": [],
+                    "id_args": []
+                }
+            ],
+            "jobs_uuid": []
+        },
+        {
+            "uuid": "1f0ba093-7d3b-6a23-b33d-b46318b3a546",
+            "title": "Cluster Render",
+            "description": "",
+            "setupjob": false,
+            "cronjob": true,
+            "cronjobKey": "cluster",
+            "multi": false,
+            "multiKey": "",
+            "properties": [
+                {
+                    "name": "_f",
+                    "expression": "ck + start"
+                }
+            ],
+            "jobs": [
+                {
+                    "uuid": "1f0ba093-7d3b-6a22-abfd-3f6d60c7c5b1",
+                    "title": "",
+                    "description": "",
+                    "category": 1,
+                    "type": 8,
+                    "script": "",
+                    "string_args": [
+                        "",
+                        "blender",
+                        "-b %project% -E %engine% -f %_f% -F %format% -t %thread% --log-level %log% -o %output%"
+                    ],
+                    "number_args": [],
+                    "boolean_args": [],
+                    "id_args": []
+                }
+            ],
+            "jobs_uuid": []
+        }
+    ],
+    "tasks_uuid": [],
+    "database_uuid": "",
+    "database": {
+        "title": "Blender Database",
+        "uuid": "1f0ba093-7d39-6315-b18c-240df76f388e",
+        "canWrite": true,
+        "containers": [
+            {
+                "name": "project",
+                "value": "C:\\project\\file.blender",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "output",
+                "value": "C:\\project\\output\\frame_#####",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "start",
+                "value": 0,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "end",
+                "value": 200,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "animation",
+                "value": true,
+                "type": 0,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "core",
+                "value": 4,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "thread",
+                "value": 0,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "frame",
+                "value": 1,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "log",
+                "value": 1,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "format",
+                "value": "OPEN_EXR",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "engine",
+                "value": "CYCLES",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            }
+        ]
+    }
+}

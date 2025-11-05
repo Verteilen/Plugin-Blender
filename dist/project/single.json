@@ -1,0 +1,136 @@
+{
+    "uuid": "1f0ba093-7d39-6310-9810-f7c56d99176b",
+    "title": "",
+    "description": "",
+    "tasks": [
+        {
+            "uuid": "1f0ba093-7d39-6313-8cc2-1c9ad76fbddf",
+            "title": "Single Node Render",
+            "description": "",
+            "setupjob": false,
+            "cronjob": false,
+            "cronjobKey": "",
+            "multi": false,
+            "multiKey": "",
+            "properties": [
+                {
+                    "name": "_a",
+                    "expression": "IF(animation, \"-a\", \"\")"
+                },
+                {
+                    "name": "_s",
+                    "expression": "IF(animation, \"\", STRING([\"-s \", start]))"
+                },
+                {
+                    "name": "_e",
+                    "expression": "IF(animation, \"\", STRING([\"-s \", end]))"
+                }
+            ],
+            "jobs": [
+                {
+                    "uuid": "1f0ba093-7d39-6312-80b3-39ae534f2966",
+                    "title": "",
+                    "description": "",
+                    "category": 1,
+                    "type": 8,
+                    "script": "",
+                    "string_args": [
+                        "",
+                        "blender",
+                        "-b %project% %_a% %_s% %_e% -E %engine% -F %format% -t %thread% --log-level %log% -o %output%"
+                    ],
+                    "number_args": [],
+                    "boolean_args": [],
+                    "id_args": []
+                }
+            ],
+            "jobs_uuid": []
+        }
+    ],
+    "tasks_uuid": [],
+    "database_uuid": "",
+    "database": {
+        "title": "Blender Database",
+        "uuid": "1f0ba093-7d39-6311-abaf-13143cfe829d",
+        "canWrite": true,
+        "containers": [
+            {
+                "name": "project",
+                "value": "C:\\project\\file.blender",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "output",
+                "value": "C:\\project\\output\\frame_#####",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "start",
+                "value": 0,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "end",
+                "value": 200,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "animation",
+                "value": true,
+                "type": 0,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "core",
+                "value": 4,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "thread",
+                "value": 0,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "frame",
+                "value": 1,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "log",
+                "value": 1,
+                "type": 1,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "format",
+                "value": "OPEN_EXR",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            },
+            {
+                "name": "engine",
+                "value": "CYCLES",
+                "type": 2,
+                "runtimeOnly": false,
+                "hidden": false
+            }
+        ]
+    }
+}

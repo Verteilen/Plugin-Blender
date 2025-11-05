@@ -1,0 +1,79 @@
+[
+    {
+        "name": "project",
+        "value": "C:\\project\\file.blender",
+        "type": 2,
+        "runtimeOnly": false,
+        "hidden": false
+    },
+    {
+        "name": "output",
+        "value": "C:\\project\\output\\frame_#####",
+        "type": 2,
+        "runtimeOnly": false,
+        "hidden": false
+    },
+    {
+        "name": "start",
+        "value": 0,
+        "type": 1,
+        "runtimeOnly": false,
+        "hidden": false
+    },
+    {
+        "name": "end",
+        "value": 200,
+        "type": 1,
+        "runtimeOnly": false,
+        "hidden": false
+    },
+    {
+        "name": "animation",
+        "value": true,
+        "type": 0,
+        "runtimeOnly": false,
+        "hidden": false
+    },
+    {
+        "name": "core",
+        "value": 4,
+        "type": 1,
+        "runtimeOnly": false,
+        "hidden": false
+    },
+    {
+        "name": "thread",
+        "value": 0,
+        "type": 1,
+        "runtimeOnly": false,
+        "hidden": false
+    },
+    {
+        "name": "frame",
+        "value": 1,
+        "type": 1,
+        "runtimeOnly": false,
+        "hidden": false
+    },
+    {
+        "name": "log",
+        "value": 1,
+        "type": 1,
+        "runtimeOnly": false,
+        "hidden": false
+    },
+    {
+        "name": "format",
+        "value": "OPEN_EXR",
+        "type": 2,
+        "runtimeOnly": false,
+        "hidden": false
+    },
+    {
+        "name": "engine",
+        "value": "CYCLES",
+        "type": 2,
+        "runtimeOnly": false,
+        "hidden": false
+    }
+]

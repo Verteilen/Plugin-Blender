@@ -1,0 +1,29 @@
+{
+    "thumbnail": "",
+    "icon": "",
+    "owner": "Elly",
+    "title": "Blender",
+    "plugins": [],
+    "projects": [
+        {
+            "title": "Single Render",
+            "filename": "single",
+            "group": "Blender",
+            "value": 100
+        },
+        {
+            "title": "Cluster Render",
+            "filename": "cluster",
+            "group": "Blender",
+            "value": 101
+        }
+    ],
+    "databases": [
+        {
+            "title": "Blender Database",
+            "filename": "database",
+            "group": "Blender",
+            "value": 0
+        }
+    ]
+}
