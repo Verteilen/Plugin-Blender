@@ -1,10 +1,10 @@
 {
-    "uuid": "1f0c5bb3-f2c4-6ef2-ae97-2b66691d0e8a",
+    "uuid": "1f0c5be6-e5aa-6de3-8558-14d291b9192a",
     "title": "",
     "description": "",
     "tasks": [
         {
-            "uuid": "1f0c5bb3-f2c4-6ef5-880f-d7bd0c8d2354",
+            "uuid": "1f0c5be6-e5aa-6de6-8f62-64363b06aaf8",
             "title": "Cluster Render",
             "description": "",
             "setupjob": false,
@@ -15,7 +15,7 @@
             "properties": [],
             "jobs": [
                 {
-                    "uuid": "1f0c5bb3-f2c4-6ef4-914b-14c8321537b5",
+                    "uuid": "1f0c5be6-e5aa-6de5-a78a-f039b07cf206",
                     "title": "",
                     "description": "",
                     "category": 1,
@@ -32,7 +32,7 @@
             "jobs_uuid": []
         },
         {
-            "uuid": "1f0c5bb3-f2c4-6ef7-8a53-6563f6059637",
+            "uuid": "1f0c5be6-e5aa-6de8-85a5-15a21cd3cc88",
             "title": "Cluster Render",
             "description": "",
             "setupjob": false,
@@ -48,7 +48,7 @@
             ],
             "jobs": [
                 {
-                    "uuid": "1f0c5bb3-f2c4-6ef6-b7bc-e9b16b465389",
+                    "uuid": "1f0c5be6-e5aa-6de7-b314-63bbb81f3cad",
                     "title": "",
                     "description": "",
                     "category": 1,
@@ -71,7 +71,7 @@
     "database_uuid": "",
     "database": {
         "title": "Blender Database",
-        "uuid": "1f0c5bb3-f2c4-6ef3-9315-d3e031dd0a6d",
+        "uuid": "1f0c5be6-e5aa-6de4-9a63-615e2f7fe0ff",
         "canWrite": true,
         "containers": [
             {

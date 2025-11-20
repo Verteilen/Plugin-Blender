@@ -26,7 +26,7 @@ PluginBuild(
             }
         },
         {
-            key: "zh-TW",
+            key: "zh_TW",
             value: {
                 pluginDes: "開源 3D 建模工具"
             }
