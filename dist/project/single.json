@@ -1,10 +1,10 @@
 {
-    "uuid": "1f0ba093-7d39-6310-9810-f7c56d99176b",
+    "uuid": "1f0c5bb3-f2c2-67e0-a685-5ede7ff1da37",
     "title": "",
     "description": "",
     "tasks": [
         {
-            "uuid": "1f0ba093-7d39-6313-8cc2-1c9ad76fbddf",
+            "uuid": "1f0c5bb3-f2c4-6ef1-9182-e9e6ffd7dfb1",
             "title": "Single Node Render",
             "description": "",
             "setupjob": false,
@@ -28,7 +28,7 @@
             ],
             "jobs": [
                 {
-                    "uuid": "1f0ba093-7d39-6312-80b3-39ae534f2966",
+                    "uuid": "1f0c5bb3-f2c4-6ef0-8e80-dbe15f6ece30",
                     "title": "",
                     "description": "",
                     "category": 1,
@@ -51,7 +51,7 @@
     "database_uuid": "",
     "database": {
         "title": "Blender Database",
-        "uuid": "1f0ba093-7d39-6311-abaf-13143cfe829d",
+        "uuid": "1f0c5bb3-f2c2-67e1-9bf0-e7f27791637e",
         "canWrite": true,
         "containers": [
             {
